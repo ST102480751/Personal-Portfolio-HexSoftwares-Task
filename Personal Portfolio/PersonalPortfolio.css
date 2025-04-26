@@ -1,0 +1,89 @@
+nav {
+    position: fixed;
+    background-color: #f0f0f0;
+
+    display:flex;
+    justify-content: space-between;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+nav a:hover {
+    color: #007BFF; /* hover effect */
+}
+
+#MeetMoeketsi {
+    background-color: #f5f5f5; /* light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    max-width: 300px;
+
+    /* positioning */
+    margin-top: 20px;   /* moves it down */
+    margin-left: auto;  /* auto on left and right centers it */
+    margin-left: 100px; /* pushes it to the right */
+
+    box-shadow: 0 4px 8px rgba(255, 2, 2, 0.973); /* slight shadow on hover */
+    color: #000000; /* optional: change text color like your nav */
+}
+
+#Me {
+    background-color: #f5f5f5; 
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    max-width: 300px;
+    margin: 10px auto; /* less margin at the top and bottom */
+
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.973); /* slight shadow on hover */
+    color: #000000; /* optional: change text color like your nav */
+}  
+
+#Interests{
+    background-color: #f5f5f5; /* light gray background */
+    padding: 0px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    max-width: 300px;
+
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.973); /* slight shadow on hover */
+
+}
+
+
+#Education{
+    background-color: #f5f5f5; /* light gray background */
+    padding: 0px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    max-width: 300px;
+    margin: 80px auto; 
+
+    box-shadow: 0 4px 8px rgba(255, 2, 2, 0.973); /* slight shadow on hover */
+    color: #000000; /* optional: change text color like your nav */
+}
+.profile-pic {
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: grayscale(70%);
+}
+.profile-pic:hover {
+  transform: scale(1.08);
+  filter: grayscale(0%);
+}
+
