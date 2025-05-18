@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title> 
+    <link rel="stylesheet" href="bookLibarry.css"> 
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="Home.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Library.html">Library</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Borrow.html">Borrow</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Profile.html">Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </nav> 
+
+    <!-- Profile Page Content -->
+    <br><br>
+    <center>
+        <h1>👤 My Profile</h1>
+        <p>View and update your personal details below.</p>
+    </center>
+
+    <!-- Profile Info Section -->
+    <div style="width: 50%; margin: auto; margin-top: 30px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
+        <h2>📄 User Information</h2>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> johndoe@email.com</p>
+        <p><strong>Member Since:</strong> January 2024</p>
+        <p><strong>Books Borrowed:</strong> 5</p>
+        <p><strong>Books Returned:</strong> 4</p>
+    </div>
+
+    <!-- Edit Info Form -->
+    <div style="width: 50%; margin: auto; margin-top: 30px; padding: 20px;">
+        <h2>✏️ Edit Profile</h2>
+        <form onsubmit="updateProfile(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" value=""><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" value="johndoe@email.com"><br><br>
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+
+
+    <script src="bookLibrary.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    min-height: 100vh;
+}
+
+/* Container for content */
+#container {
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Navigation bar styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}
+
+/* Layout for all book items */
+#bookList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 120px; /* to make space for fixed nav */
+    padding: 20px;
+}
+
+/* Styling for each book */
+.book-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.book-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Book image style */
+.book-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Book title */
+.book-item h4 {
+    font-size: 18px;
+    color: #222;
+    margin: 10px 0 5px;
+}
+
+/* Book author or details */
+.book-item p {
+    font-size: 14px;
+    color: #666;
+}

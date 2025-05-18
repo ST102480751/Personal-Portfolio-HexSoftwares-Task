@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+    <link rel="stylesheet" href="bookLibarry.css"> 
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="Home.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Library.html">Library</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Borrow.html">Borrow</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Profile.html">Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </nav>   
+
+    <br><br>
+
+    <!-- Search Bar -->
+    <center>
+        <input type="text" id="search" placeholder="search here....">
+        <button onclick="searchBooks()">Search</button>
+    </center>
+
+    <!-- Welcome Section -->
+    <br><br>
+    <center>
+        <h1>📖 Welcome to Bio Library</h1>
+        <p>Explore, borrow, and enjoy your favorite books all in one place!</p>
+    </center>
+
+    <!-- Featured Books -->
+    <section>
+        <h2 style="text-align: center;">📚 Featured Books</h2>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px;">
+            <div style="text-align: center;">
+                <img src="https://covers.openlibrary.org/b/id/8231996-L.jpg" alt="1984" width="120">
+                <p><strong>1984</strong><br>George Orwell</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://covers.openlibrary.org/b/id/9611367-L.jpg" alt="Atomic Habits" width="120">
+                <p><strong>Atomic Habits</strong><br>James Clear</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://covers.openlibrary.org/b/id/9251996-L.jpg" alt="Becoming" width="120">
+                <p><strong>Becoming</strong><br>Michelle Obama</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section style="text-align:center;">
+        <h2>🔗 Quick Access</h2>
+        <p>Need to borrow a book fast? <a href="Borrow.html">Click here</a></p>
+        <p>Check your reading history and profile <a href="Profile.html">here</a></p>
+    </section>
+
+    <!-- Book List Output -->
+    <div id="bookList"></div>
+
+    <script src="bookLibrary.js"></script>
+</body>
+</html>
